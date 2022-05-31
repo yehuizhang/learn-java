@@ -8,8 +8,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ImageProcessing {
-    public static final String SOURCE_FILE = "./resources/many-flowers.jpg";
-    public static final String DESTINATION_FILE = "./out/many-flowers.jpg";
+    public static final String SOURCE_FILE = "./src/main/resources/multithreading/many-flowers.jpg";
+    public static final String DESTINATION_FILE = "./out/multithreading/many-flowers.jpg";
 
     public static void main(String[] args) throws IOException {
 
@@ -17,17 +17,16 @@ public class ImageProcessing {
         BufferedImage resultImage = new BufferedImage(originalImage.getWidth(), originalImage.getHeight(), BufferedImage.TYPE_INT_RGB);
 
         long startTime = System.currentTimeMillis();
-        //recolorSingleThreaded(originalImage, resultImage);
-        int numberOfThreads = 1;
+//        recolorSingleThreaded(originalImage, resultImage);
+        int numberOfThreads = 2;
         recolorMultithreaded(originalImage, resultImage, numberOfThreads);
-        long endTime = System.currentTimeMillis();
 
-        long duration = endTime - startTime;
+        long duration = System.currentTimeMillis() - startTime;
 
         File outputFile = new File(DESTINATION_FILE);
         ImageIO.write(resultImage, "jpg", outputFile);
 
-        System.out.println(String.valueOf(duration));
+        System.out.println(duration + "ms");
     }
 
     public static void recolorMultithreaded(BufferedImage originalImage, BufferedImage resultImage, int numberOfThreads) {
@@ -56,6 +55,7 @@ public class ImageProcessing {
             try {
                 thread.join();
             } catch (InterruptedException e) {
+                e.printStackTrace();
             }
         }
     }
