@@ -4,41 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f224f32-06b0-480a-b68f-76f87eca92f5" name="Changes" comment="init">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yehuizhang/design_patterns/adapter/AdapterExercise.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yehuizhang/design_patterns/bridge/BridgeExercise.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yehuizhang/design_patterns/builder/AdvancedBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yehuizhang/design_patterns/builder/CodeBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yehuizhang/design_patterns/builder/HtmlBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yehuizhang/design_patterns/composite/CompositeExercise.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yehuizhang/design_patterns/factory/AbstractFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yehuizhang/design_patterns/factory/FactoryExercise.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yehuizhang/design_patterns/factory/FactoryMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yehuizhang/design_patterns/prototype/CopyConstructor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yehuizhang/design_patterns/prototype/CopyThroughSerialization.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yehuizhang/design_patterns/prototype/PrototypeExercise.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yehuizhang/design_patterns/singleton/LazySingleton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yehuizhang/design_patterns/singleton/Multiton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yehuizhang/design_patterns/singleton/SingletonExercise.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yehuizhang/design_patterns/solid/dependencyinversion/DependencyInversion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yehuizhang/design_patterns/solid/dependencyinversion/DipViolation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yehuizhang/design_patterns/solid/interfacesegregation/InterfaceSegregation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yehuizhang/design_patterns/solid/liskovsubstitution/LiskovSubstitution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yehuizhang/design_patterns/solid/liskovsubstitution/LspViolationExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yehuizhang/design_patterns/solid/openclosed/Color.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yehuizhang/design_patterns/solid/openclosed/OpenClosed.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yehuizhang/design_patterns/solid/openclosed/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yehuizhang/design_patterns/solid/openclosed/Size.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yehuizhang/design_patterns/solid/openclosed/filter/Filter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yehuizhang/design_patterns/solid/openclosed/specification/Specification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yehuizhang/design_patterns/solid/singleresponsibility/SingleResponsibility.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/yehuizhang/design_patterns/bridge/BridgeExerciseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/yehuizhang/design_patterns/builder/CodeBuilderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/yehuizhang/design_patterns/composite/CompositeExerciseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/yehuizhang/design_patterns/factory/FactoryExerciseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/yehuizhang/design_patterns/prototype/LineTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="0f224f32-06b0-480a-b68f-76f87eca92f5" name="Changes" comment="Moved DesignPattern repo here">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +58,7 @@
       <recent name="com.yehuizhang.design_patterns.adapter" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BridgeExerciseTest.SquareTest">
+  <component name="RunManager" selected="JUnit.ComplexCalculationTest.calculateResult">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.yehuizhang.Main" />
       <module name="learn-java" />
@@ -121,6 +88,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ComplexCalculationTest.calculateResult" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="learn-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yehuizhang.multithreading.coordination.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yehuizhang.multithreading.coordination" />
+      <option name="MAIN_CLASS_NAME" value="com.yehuizhang.multithreading.coordination.ComplexCalculationTest" />
+      <option name="METHOD_NAME" value="calculateResult" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="learn-java" />
       <method v="2">
@@ -136,6 +119,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ComplexCalculationTest.calculateResult" />
         <item itemvalue="JUnit.BridgeExerciseTest.SquareTest" />
         <item itemvalue="Application.Main" />
       </list>
@@ -157,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653983712225</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Moved DesignPattern repo here">
+      <created>1653984491097</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1653984491097</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -173,6 +164,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="Moved DesignPattern repo here" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved DesignPattern repo here" />
   </component>
 </project>
