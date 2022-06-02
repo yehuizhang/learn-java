@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f224f32-06b0-480a-b68f-76f87eca92f5" name="Changes" comment="Multithreading: Advanced Locks">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yehuizhang/multithreading/inter_thread_communication/MatricesGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yehuizhang/multithreading/inter_thread_communication/MatricesMultiplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yehuizhang/multithreading/inter_thread_communication/SimpleCountDownLatch.java" afterDir="false" />
+    <list default="true" id="0f224f32-06b0-480a-b68f-76f87eca92f5" name="Changes" comment="Multithreading: Inter-Thread communication">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yehuizhang/multithreading/lock_free/AtomicStack.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/yehuizhang/multithreading/locking/CounterAtomic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yehuizhang/multithreading/locking/ProblematicExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yehuizhang/multithreading/locking/Counter.java" afterDir="false" />
@@ -76,7 +74,20 @@
       <recent name="com.yehuizhang.multithreading.locking" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CounterAtomic">
+  <component name="RunManager" selected="Application.AtomicStack">
+    <configuration name="AtomicStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yehuizhang.multithreading.lock_free.AtomicStack" />
+      <module name="learn-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yehuizhang.multithreading.lock_free.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CounterAtomic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.yehuizhang.multithreading.locking.CounterAtomic" />
       <module name="learn-java" />
@@ -129,26 +140,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TradeGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.yehuizhang.multithreading.locking_advanced.TradeGUI" />
-      <module name="learn-java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yehuizhang.multithreading.locking_advanced.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AtomicStack" />
         <item itemvalue="Application.CounterAtomic" />
         <item itemvalue="Application.MatricesMultiplication" />
         <item itemvalue="Application.MatricesGenerator" />
         <item itemvalue="Application.ReadWriteLock" />
-        <item itemvalue="Application.TradeGUI" />
       </list>
     </recent_temporary>
   </component>
@@ -189,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654078990156</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Multithreading: Inter-Thread communication">
+      <created>1654160440733</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1654160440733</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -208,6 +213,7 @@
     <MESSAGE value="Moved DesignPattern repo here" />
     <MESSAGE value="Moved Multithreading repo here" />
     <MESSAGE value="Multithreading: Advanced Locks" />
-    <option name="LAST_COMMIT_MESSAGE" value="Multithreading: Advanced Locks" />
+    <MESSAGE value="Multithreading: Inter-Thread communication" />
+    <option name="LAST_COMMIT_MESSAGE" value="Multithreading: Inter-Thread communication" />
   </component>
 </project>

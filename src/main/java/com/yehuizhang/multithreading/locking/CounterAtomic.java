@@ -1,6 +1,8 @@
 package com.yehuizhang.multithreading.locking;
 
-public class ProblematicExample {
+import java.util.concurrent.atomic.AtomicInteger;
+
+public class CounterAtomic {
 
     public static void main(String[] args) {
 
@@ -8,15 +10,13 @@ public class ProblematicExample {
 
         Thread thread1 = new Thread(() -> {
             for (int i = 0; i < 10000; i++) {
-//                inventoryCounter.increase();
-                inventoryCounter.increaseSync();
+                inventoryCounter.increase();
             }
         });
 
         Thread thread2 = new Thread(() -> {
             for (int i = 0; i < 10000; i++) {
-//                inventoryCounter.decrease();
-                inventoryCounter.decreaseSync();
+                inventoryCounter.decrease();
             }
         });
 
@@ -34,26 +34,22 @@ public class ProblematicExample {
 
 
     private static class InventoryCounter {
-        private int items = 0;
+        private AtomicInteger items;
 
-        public void increase() {
-            items++;
+        public InventoryCounter() {
+            this.items = new AtomicInteger();
         }
 
-        public synchronized void increaseSync() {
-            items++;
+        public void increase() {
+            items.incrementAndGet();
         }
 
         public void decrease() {
-            items--;
-        }
-
-        public synchronized void decreaseSync() {
-            items--;
+            items.decrementAndGet();
         }
 
         public int getItems() {
-            return items;
+            return items.get();
         }
     }
 }
